@@ -26,18 +26,23 @@ Sales Data: The primary dataset used for this analysis is "Superstore Sales" Exc
 - Power Query
 - Power BI
 
+## Data Cleaning and Preparation
+In the initial Data Cleaning and Preparation Phase, i performed the following tasks:
+1. Imported the data using power query using excel file option.
+2. Used Power query to transform the datasets.
+
 ## Exploratory Data Analysis
 EDA involves exploring the Sales Data to answer key questions, such as:
 
-What are the Total Sales and Quantity within the period?
-What is the average shipping days?
-What is the Monthly sales YOY?
-What is the Monthly profit YOY?
-Which Region generate the highest Sales?
-Which Shipmode is most frequently used?
-Which Payment Mode generate more revenue?
-What are the Total sales of each product category?
-What are the Top 3 Product category?
+- What are the Total Sales and Quantity within the period?
+- What is the average shipping days?
+- What is the Monthly sales YOY?
+- What is the Monthly profit YOY?
+- Which Region generate the highest Sales?
+- Which Shipmode is most frequently used?
+- Which Payment Mode generate more revenue?
+- What are the Total sales of each product category?
+- What are the Top 3 Product category?
 
 ![Screenshot 2024-11-29 133950](https://github.com/user-attachments/assets/ef084723-245a-431d-86d8-16c1cd9c0a26)
 

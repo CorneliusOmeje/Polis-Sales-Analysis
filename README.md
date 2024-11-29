@@ -30,6 +30,7 @@ Sales Data: The primary dataset used for this analysis is "Superstore Sales" Exc
 In the initial Data Cleaning and Preparation Phase, i performed the following tasks:
 1. Imported the data using power query using excel file option.
 2. Used Power query to transform the datasets.
+3. Used Power BI for visualization
 
 ## Exploratory Data Analysis
 EDA involves exploring the Sales Data to answer key questions, such as:

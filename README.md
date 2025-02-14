@@ -55,4 +55,71 @@ EDA involves exploring the Sales Data to answer key questions, such as:
 
 ![Screenshot 2024-11-29 134553](https://github.com/user-attachments/assets/3ec8bdfa-f641-4a79-8ee2-d7a5bd39a162)
 
+## Data Analysis
+Power BI was used for creating some measures using DAX Funcions. Some of the measures used for these analysis include:
+``` Sql
+Last Year Sales = CALCULATE([Total sales],
+SAMEPERIODLASTYEAR(SuperStore_Sales_Dataset[Order Date].[Date]))
+```
+``` Sql
+Profit Last Year = CALCULATE([Total Profit],
+SAMEPERIODLASTYEAR(SuperStore_Sales_Dataset[Order Date].[Date]))
+```
+``` Sql
+Avg Ship Days = AVERAGE(SuperStore_Sales_Dataset[Average Delivery])
+```
+``` Sql
+Sales Forecast = SUMMARIZE(SuperStore_Sales_Dataset,SuperStore_Sales_Dataset[Order Date],"Total sales",SUM(SuperStore_Sales_Dataset[Sales]))
+```
+``` Sql
+Average Delivery = DATEDIFF(SuperStore_Sales_Dataset[Order Date],SuperStore_Sales_Dataset[Ship Date],DAY)
+```
 
+## Findings 
+
+1. **Monthly Sales Year-Over-Year (YOY) Growth:**  
+   - The best-performing months in terms of sales:  
+     - **December:** **$244,584.90** (compared to **$78,399.04** last year)  
+     - **November:** **$210,372.80** (compared to **$79,411.97** last year)  
+     - **September:** **$193,213.60** (compared to **$73,410.02** last year)  
+   - These months show strong seasonal sales performance, likely influenced by holiday shopping.  
+
+2. **Monthly Profit YOY:**  
+   - The most profitable months:  
+     - **December:** **$26,368.10**  
+     - **October:** **$25,518.40**  
+     - **September:** **$20,320.20**  
+
+3. **Region with the Highest Sales:**  
+   - **West Region:** **$522,441.10** (Highest sales volume).  
+
+4. **Most Frequently Used Shipping Mode:**  
+   - **Standard Class** is the most commonly used shipping method.  
+
+5. **Top Payment Mode by Revenue:**  
+   - **Cash on Delivery (COD)** generates the highest revenue.  
+
+---
+
+### **Actionable Recommendations to Improve Sales:**
+
+1️⃣ **Leverage Seasonal Trends:**  
+   - Since **December, November, and September** are peak sales months, ramp up marketing efforts and special promotions during these periods.  
+   - Offer discounts and bundles for the top-selling categories (**Office Supplies, Technology, and Furniture**) to maximize revenue.  
+
+2️⃣ **Expand in High-Performing Regions:**  
+   - Since the **West region** has the highest sales, allocate more marketing and inventory resources there.  
+   - Conduct localized promotions to further boost sales in this area.  
+
+3️⃣ **Optimize Shipping Strategy:**  
+   - **Standard Class** is the most used shipping method, which could mean customers prioritize cost over speed.  
+   - Consider introducing express shipping discounts for high-value purchases to encourage faster delivery.  
+
+4️⃣ **Increase Digital Payment Options:**  
+   - **Cash on Delivery (COD)** is the top revenue-generating payment mode.  
+   - Encourage customers to switch to online payments by offering discounts or cashback incentives for digital transactions.  
+
+5️⃣ **Enhance Inventory Planning for Top Categories:**  
+   - Ensure sufficient stock levels of **Office Supplies, Technology, and Furniture** before peak seasons.  
+   - Analyze fast-moving SKUs within these categories to prioritize stocking high-demand items.  
+​​
